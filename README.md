@@ -69,3 +69,7 @@ Escolha a instância adequada ao seu caso de teste. Instâncias maiores requerem
 
 # O leitor está tendo bugs em algumas intancias, mas estou trabalhando nisso. A implementação explode quando a instancia passa de 30 cidades e fica rodando infinitamente nos checks de subtour, creio que implemente errado.
 # Estou cogitando seriamente mudar pra Julia
+
+## GenAI usage:
+### Utilizei o gemini 2.5 pro para entender trechos do código em C++ do leitor, não trabalho com essa lang há uns bons anos
+### No desenvolvimento, o autocomplete do copilot me ajudou a dar tração da implementação
