@@ -66,3 +66,6 @@ Escolha a instância adequada ao seu caso de teste. Instâncias maiores requerem
 - `data.py`: Módulo para manipulação de dados
 - `instances/`: Diretório contendo as instâncias TSP
 - `Requirements.txt`: Lista de dependências Python
+
+# O leitor está tendo bugs em algumas intancias, mas estou trabalhando nisso. A implementação explode quando a instancia passa de 30 cidades e fica rodando infinitamente nos checks de subtour, creio que implemente errado.
+# Estou cogitando seriamente mudar pra Julia
