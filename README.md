@@ -42,12 +42,12 @@ pip install -r Requirements.txt
 Para executar o algoritmo, use o arquivo `main.py` especificando o caminho para uma instância TSP:
 
 ```bash
-python main.py instances/[nome-da-instancia].tsp
+python main.py instances/[nome-da-instancia].tsp [método de busca]
 ```
 
 Exemplo:
 ```bash
-python main.py instances/berlin52.tsp
+python main.py instances/berlin52.tsp best_bound
 ```
 
 ## Instâncias Disponíveis
@@ -67,9 +67,8 @@ Escolha a instância adequada ao seu caso de teste. Instâncias maiores requerem
 - `instances/`: Diretório contendo as instâncias TSP
 - `Requirements.txt`: Lista de dependências Python
 
-# O leitor está tendo bugs em algumas intancias, mas estou trabalhando nisso. A implementação explode quando a instancia passa de 30 cidades e fica rodando infinitamente nos checks de subtour, creio que implemente errado.
-# Estou cogitando seriamente mudar pra Julia
+# O leitor está tendo bugs em algumas intancias, mas estou trabalhando nisso. A implementação explode quando a instancia passa de 20 cidades e fica rodando infinitamente nos checks de subtour. Estava com um Bug de que a tour ótima era sempre 0,1,2..., n. Mas era um erro meu quando guardava a tour, havia um sorted() onde não deveria.
 
 ## GenAI usage:
 ### Utilizei o gemini 2.5 pro para entender trechos do código em C++ do leitor, não trabalho com essa lang há uns bons anos
-### No desenvolvimento, o autocomplete do copilot me ajudou a dar tração da implementação
+### No desenvolvimento, o autocomplete do copilot me ajudou a dar tração da implementação. No refactor para adicionar o best bound, aproveitei para melhorar as docstrings, comentários e o print dos logs da resolução.
